@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ulepszona.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="sprawdz">Sprawdź ważne elementy</button>
+    <div class="monster-sections">
+      <div class="monster-placements">
+        <div class="monster-block">
+          <img src="img/rycerz.jpg" class="image-parameters rycerz-holy" />
+          <p class="holy-name">Holy Knight</p>
+          <p class="knight-hp">HP: 3000</p>
+          <button class="target" data-target="holy-knight">
+            Select target
+          </button>
+        </div>
+        <div class="monster-block">
+          <img src="img/smok.jpg" class="image-parameters" />
+          <p class="dragon-name">Ancient Dragon</p>
+          <p class="dragon-hp">HP: 9999</p>
+          <button class="target" data-target="ancient-dragon">
+            Select target
+          </button>
+        </div>
+        <div class="monster-block">
+          <img src="img/crucible-knight.jpg" class="image-parameters" />
+          <p class="crucible-name">Crucible Knight</p>
+          <p class="crucible-hp">HP: 5000</p>
+          <button class="target" data-target="crucible-knight">
+            Select target
+          </button>
+        </div>
+      </div>
+      <div class="cast-button"><button class="target-aoe">Cast</button></div>
+    </div>
+    <div class="heroes-buttons">
+      <div class="hero-description">
+        <button data="warrior-button-id" id="warriorBtn" class="btn">
+          Warrior
+        </button>
+        <p class="hero-description-visible">
+          A Warrior specializes in dealing physical damage through powerful
+          attacks, unaffected by the type of magic or elemental affinity. They
+          rely on sheer strength and combat skill rather than magical abilities
+          to defeat their foes.
+        </p>
+      </div>
+      <div class="hero-description">
+        <button data="defender-button-id" id="defenderBtn" class="btn">
+          Defender
+        </button>
+        <p class="hero-description-visible">
+          A Defender specializes in protection, reducing the damage taken by
+          allies or absorbing it entirely on himself. His role is to shield the
+          team from harm, ensuring others can fight without fear of being
+          overwhelmed.
+        </p>
+      </div>
+      <div class="hero-description">
+        <button data="healer-button-id" id="healerBtn" class="btn">
+          Healer
+        </button>
+        <p class="hero-description-visible">
+          A healer specializes in restoring the health of their allies, using
+          powerful healing abilities to keep the team alive
+        </p>
+      </div>
+      <div class="hero-description">
+        <button data="sorcerer-button-id" id="sorcererBtn" class="btn">
+          Sorcerer
+        </button>
+        <p class="hero-description-visible">
+          A Sorcerer wields the power of elemental magic, unleashing devastating
+          attacks using fire, ice, lightning, and magic type spells
+        </p>
+      </div>
+      <div class="hero-description">
+        <button data="spellblade-button-id" id="spellbladeBtn" class="btn">
+          Spellblade
+        </button>
+        <p class="hero-description-visible">
+          A Spellblade combines mastery of fire and ice magic with precision
+          strikes, dealing devastating damage to enemies. They can also inflict
+          weaknesses to fire and ice, amplifying the effectiveness of their
+          elemental attacks.
+        </p>
+      </div>
+      <div class="hero-description">
+        <button data="druid-button-id" id="druidBtn" class="btn">Druid</button>
+        <p class="hero-description-visible">
+          A Druid harnesses the magic of earth and wind to control the
+          battlefield, while also supporting allies with healing and mana
+          regeneration. Their versatile abilities make them both a powerful
+          spellcaster and a vital support.
+        </p>
+      </div>
+      <div class="hero-description">
+        <button data="alchemist-button-id" id="alchemistBtn" class="btn">
+          Alchemist
+        </button>
+        <p class="hero-description-visible">
+          An Alchemist excels as a debuffer, applying elemental weaknesses to
+          enemies and reducing their attack power. At the same time, they
+          empower allies by boosting their attack, making them a key tactical
+          asset in any battle.
+        </p>
+      </div>
+      <div class="hero-description">
+        <button
+          data="elementalMaster-button-id"
+          id="elementalMasterBtn"
+          class="btn"
+        >
+          Elemental master
+        </button>
+        <p class="hero-description-visible">
+          An Elemental Master commands every type of magic, casting spells that
+          target all enemies simultaneously. Their abilities deal dual-element
+          damage, making them a formidable force against any opposition.
+        </p>
+      </div>
+    </div>
+    <div class="show-description"></div>
+    <div class="info-display">Defeat extremely dangerous foes!</div>
+
+    <div class="player-section js-player-section">
+      <div class="hero-heal-buttons">
+        <button class="hero-select player1" id="player-1">Select</button>
+        <button class="hero-select player2" id="player-2">Select</button>
+        <button class="hero-select player3" id="player-3">Select</button>
+        <button class="hero-select player4" id="player-4">Select</button>
+      </div>
+
+      <div class="player-placement js-player-placement"></div>
+    </div>
+
+    <script src="data/ulepszona.js" type="module"></script>
+    <!-- <script src="data/testy.js"></script> -->
+  </body>
+</html>
